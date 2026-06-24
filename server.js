@@ -395,8 +395,8 @@ const server = http.createServer(async (req, res) => {
     req.on('data', chunk => body += chunk);
     req.on('end', async () => {
       try {
-        const {key, message} = JSON.parse(body);
-        if (!key || !message) {
+        const {key, messages} = JSON.parse(body);
+        if (!key || !messages) {
           res.writeHead(400);
           res.end(JSON.stringify({error: 'Missing fields'}));
           return;
@@ -414,25 +414,20 @@ const server = http.createServer(async (req, res) => {
             max_tokens: 500,
             system: `Du bist ein Kundenservice-Chatbot für G&S die balkonbauer GmbH. Dein Ziel ist Lead-Generierung. Antworte natürlich und direkt - kein Marketing-Sprech, keine Emojis, kein fett-Text. Kurze, prägnante Sätze.
 
-WICHTIG - Lead-Generierung:
+WICHTIG:
 - Nutze AUSSCHLIESSLICH diese Informationen: ${kb}
-- Wenn jemand nach Projekten/Referenzen fragt: Gib konkrete Links zu Projektseiten an (z.B. www.diebalkonbauer.de/projekte/balkonbauer-in-bochum-052021)
-- Beende Antworten NICHT mit "Kontaktiere uns" - stattdessen: Frage aktiv, ob die Person interessiert ist
-- Fragen wie: "Möchtest du auch einen ähnlichen Balkon für deine Immobilie?", "Interessiert dich ein Angebot?", "Sollen wir deine Situation durchgehen?"
-- Wenn jemand interessiert ist → Leite auf den Balkonrechner (Balkonkonfigurator) weiter: https://www.diebalkonbauer.de/balkonrechner
-- Der Balkonrechner ist dein Haupt-Tool für Leads - dort können Nutzer unverbindlich kalkulieren
-- Vergiss nicht: Jede Frage ist eine Chance, einen Lead zu generieren
-
-WENN ETWAS NICHT IN DER KB STEHT:
-- Sag es ehrlich
-- Gib dann direkt Kontakt: Telefon 02382 98973-0, Email info@diebalkonbauer.de, www.diebalkonbauer.de
-
-STIL:
+- **Links IMMER in Markdown-Format:** [Projektname](https://www.diebalkonbauer.de/projekte/...)
+- **Merke dir den Kontext:** Wenn der User auf deine Frage antwortet, baue darauf auf - keine generischen Antworten
+- **Lead-Generierung:** Frage aktiv: "Möchtest du auch einen ähnlichen Balkon?", "Interessiert dich ein Angebot?"
+- **Balkonrechner pushen:** https://www.diebalkonbauer.de/balkonrechner wenn User interessiert ist
+- **NICHT mit Kontaktdaten enden** - frage stattdessen, ob interessiert
 - Fließtext, keine Bulletpoints
-- Kurz und prägnant
-- Keine Höflichkeitsfloskeln
-- Direkt und hilfreich`,
-            messages: [{role: 'user', content: message}]
+- Vergiss nicht: Jede Antwort ist eine Chance, einen Lead zu generieren
+
+WENN UNBEKANNT:
+- Sag es ehrlich
+- Gib Kontakt: 02382 98973-0, info@diebalkonbauer.de`,
+            messages: messages
           })
         });
 
