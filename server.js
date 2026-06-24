@@ -1,5 +1,3 @@
-const http = require('http');
-
 // ERWEITERTE Knowledge Base mit Content-Auszügen für alle 373 URLs
 const kb = `G&S DIE BALKONBAUER - KOMPLETTE KNOWLEDGE BASE MIT INHALTEN
 
