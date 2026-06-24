@@ -1,6 +1,6 @@
 const http = require('http');
 
-// UMFASSENDE Knowledge Base mit FAQ, Projekte, Magazin
+// UMFASSENDE Knowledge Base mit allen Referenzen, Magazin-Artikeln und FAQs
 const kb = `G&S DIE BALKONBAUER - KOMPLETTE UNTERNEHMENSINFO
 
 KONTAKT & ADRESSE:
@@ -9,6 +9,7 @@ Kruppstraße 34, 59227 Ahlen, Deutschland
 Telefon: 02382 98973-0
 E-Mail: info@diebalkonbauer.de
 Website: www.diebalkonbauer.de
+Balkonrechner: www.diebalkonbauer.de/balkonrechner
 
 ==================================================
 UNTERNEHMEN
@@ -17,40 +18,81 @@ UNTERNEHMEN
 UNTERNEHMENSÜBERSICHT:
 - Spezialist für Balkonbau seit über 25 Jahren
 - Über 40.000 Balkone gebaut
+- 15.000+ erfolgreich abgeschlossene Projekte
 - Eigenes Werk in Ahlen, Deutschland
 - 100+ Mitarbeiter
 - Zertifizierte deutsche Facharbeit
 - ISO 9001 zertifiziert seit 1998
+- EN 1090 zertifiziert für Fertigung
+- Deutschlandweit tätig mit eigenem Montagekran
 
 LEISTUNGEN:
 1. BERATUNG & PLANUNG: Kostenlose Beratung, 3D-Konstruktion, Ortstermin
-2. BAUPLANUNG: Professionelle Planung, Statische Berechnungen, Genehmigungen
-3. FERTIGUNG: Im eigenen Werk, EN 1090 zertifiziert
-4. MONTAGE: Deutschlandweit, eigener Montagekran, 2-3 Tage vor Ort
-5. SERVICE: Vollständig aus einer Hand
+2. BAUPLANUNG: Professionelle Planung, Statische Berechnungen, Genehmigungen, Bauanträge
+3. FERTIGUNG: Im eigenen Werk, EN 1090 zertifiziert, hochwertige Materialien
+4. MONTAGE: Deutschlandweit, eigener Montagekran, 2-3 Tage vor Ort, zertifizierte Facharbeit
+5. SERVICE: Vollständig aus einer Hand - von Idee bis Fertigstellung
 
 ==================================================
 BALKONSYSTEME
 ==================================================
 
-1. ANBAUBALKONE: Für Neubauten & nachträgliche Anbauten, in Geschossdecke verankert
-2. VORSTELLBALKONE: Auf Stützen, für Sanierungen ideal, mit Fundament
-3. NISCHENBALKONE: In Nischen integriert, platzsparend
-4. FREITRAGENDE BALKONE: Stützenfrei, modernes Design
-5. BALKONKRAFTWERK: Mini-Solar 800W, mit Förderung
-6. BALKONZUBEHÖR: Dächer, Sichtschutz, Geländer, Bodenbeläge
+1. ANBAUBALKONE: 
+   - Für Neubauten & nachträgliche Anbauten
+   - In Geschossdecke verankert
+   - Schnell und effizient
+   - Ideal für Neubau
+   
+2. VORSTELLBALKONE: 
+   - Auf Stützen gestellt
+   - Für Sanierungen ideal
+   - Mit Fundament
+   - Auch für Bestandsbauten
+   
+3. NISCHENBALKONE: 
+   - In Nischen integriert
+   - Platzsparend
+   - Für bestimmte Architektur
+   
+4. FREITRAGENDE BALKONE: 
+   - Stützenfrei
+   - Modernes Design
+   - Elegante Lösung
+   
+5. BALKONKRAFTWERK: 
+   - Mini-Solar 800W
+   - Mit Förderung möglich
+   - Nachhaltigkeit
+   
+6. BALKONZUBEHÖR: 
+   - Dächer
+   - Sichtschutz
+   - Geländer (Stab, Glas, Kunststoff, Holzoptik, Edelstahl)
+   - Bodenbeläge
+   - Markisen
+   - Sonnenschutz
 
 ==================================================
 MATERIALIEN
 ==================================================
 
 RAHMEN:
-- Aluminium (rostfrei, 100% recyclebar, wartungsarm)
+- Aluminium (rostfrei, 100% recyclebar, wartungsarm, langlebig, UV-beständig, umweltfreundlich)
 - Beton (stabil, langlebig)
 - Stahl (feuerverzinkt, robust)
+- Holz (warm, natürlich - höherer Pflegeaufwand)
 
 GELÄNDER:
-- Stabgeländer, Glas, Kunststoff-Platten, Holzoptik, Edelstahl
+- Stabgeländer (klassisch, robust)
+- Glas (modern, transparent, viel Licht)
+- Kunststoff-Platten (wartungsarm)
+- Holzoptik (warm, natürlich)
+- Edelstahl (elegant, langlebig)
+
+FARBEN:
+- Alle RAL-Farben möglich
+- Kundenspezifische Wunschfarben
+- Widerstandsfähige Oberflächenbeschichtungen
 
 ==================================================
 KOSTEN & PREISE
@@ -63,30 +105,49 @@ VORSTELLBALKON 6m²:
 - Holz: ab €3.000
 - Aluminium: ab €3.200
 
-ENTHALTEN: Angebotserstellung, Aufmaß, Planung, Fertigung, Lieferung (bis 90km), Montage, TÜV-Prüfung
+VORSTELLBALKON 9m²:
+- Stahl: ab €4.500
+- Holz: ab €4.000
+- Aluminium: ab €4.200
+
+VORSTELLBALKON ab 12m²:
+- Stahl: ab €6.000
+- Holz: ab €6.500
+- Aluminium: ab €5.800
+
+ENTHALTEN BEI ALLEN: Angebotserstellung, Aufmaß, Planung, Fertigung, Lieferung (bis 90km), Montage, TÜV-Prüfung
 
 WERTSTEIGERUNG:
-- Immobilie: +5-10% Wert
-- Miete: +50-100€/Monat möglich
-- Nutzungsdauer: 20-30+ Jahre
+- Immobilienwert: +5-10%
+- Mietpreise: +50-100€/Monat möglich
+- Kundenzufriedenheit: Deutlich höher
+- Nutzungsdauer: 20-30+ Jahre (Aluminium: 50+ Jahre)
+
+GESAMTKOSTEN:
+- Kleine Projekte: 5.000€ - 20.000€
+- Mittlere Projekte: 20.000€ - 100.000€
+- Großprojekte: 100.000€+
+- Bausatze: 30-40% günstiger, erfordern aber Eigenarbeit
 
 ==================================================
 ZEITEN & ABLAUF
 ==================================================
 
 GESAMTDAUER: 2-6 Monate
+- Genehmigungsantrag: 1-2 Wochen Vorbereitung
 - Genehmigung: 1-2 Monate (Großstädte: 6-12 Monate)
-- Fertigung: 2-4 Wochen
+- Fertigung: 2-4 Wochen im Werk
 - Montage: 1-2 Wochen (2-3 Tage vor Ort)
 - LIEFERZEIT: Mindestens 16 Wochen
 
-MONTAGE-SCHRITTE:
-1. Vorbereitung & Gerüst
+MONTAGE-SCHRITTE (2-3 Tage vor Ort):
+1. Vorbereitung & Gerüst aufbauen
 2. Alte Balkone abreißen (falls nötig)
-3. Fundamente
+3. Fundamente graben und gießen
 4. Balkon-Montage
-5. Geländer & Bodenbelag
-6. TÜV-Prüfung & Abnahme
+5. Geländer & Bodenbelag anbringen
+6. TÜV-Prüfung & Abnahme durch Prüfer
+7. Übergabe & Abnahme mit Eigentümer
 
 ==================================================
 BAUGENEHMIGUNG
@@ -95,100 +156,227 @@ BAUGENEHMIGUNG
 - Deutschland: Meist erforderlich
 - NRW: Grundsätzlich genehmigungspflichtig
 - Antragsdauer: 4-8 Wochen durchschnittlich
+- Große Städte: Bis zu 6-12 Monate möglich
 - Kleine Vorstellbalkone: Können genehmigungsfrei sein (je nach Bundesland)
-- G&S hilft bei Genehmigungen
+- G&S hilft bei allen Genehmigungen
+- Kosten: Ca. 500-1.500€ (Architekt/Genehmigungsantrag)
+- Statik: Wird von G&S bereitgestellt
 
 ==================================================
 HÄUFIGE FRAGEN (FAQ)
 ==================================================
 
 F: Warum G&S die balkonbauer?
-A: 25+ Jahre Erfahrung, 40.000+ Balkone, Full-Service aus einer Hand, Qualität & Zertifizierungen, deutschlandweit mit eigenem Montagekran.
+A: 25+ Jahre Erfahrung, 40.000+ Balkone, 15.000+ Projekte, Full-Service aus einer Hand, Qualität, ISO 9001 Zertifizierung, deutschlandweit mit eigenem Montagekran, persönliche Betreuung.
 
 F: Warum Aluminium?
-A: Leicht, rostfrei, 100% recyclebar, wartungsarm, UV-beständig, lange Lebensdauer, umweltfreundlich.
+A: Leicht, rostfrei, 100% recyclebar, wartungsarm, UV-beständig, lange Lebensdauer (50+ Jahre), umweltfreundlich, schöne Optik, gutes Preis-Leistungs-Verhältnis.
 
 F: Kann ich selbst montieren?
-A: Bausatz: 30-40% günstiger, aber 3-5 Tage Arbeit, Handwerksfähigkeiten nötig, KEINE Gewährleistung, Sicherheitsrisiko!
-PROFESSIONELL: Garantie, schnell (2-3 Tage), TÜV-geprüft, EMPFOHLEN!
+A: Bausatz: 30-40% günstiger, aber 3-5 Tage Arbeit, Handwerksfähigkeiten erforderlich, KEINE Gewährleistung, Sicherheitsrisiko!
+PROFESSIONELL: Garantie, schnell (2-3 Tage), TÜV-geprüft, sicher, EMPFOHLEN!
 
 F: Wie stabil sind Anbaubalkone?
-A: Sehr stabil! Fachgerecht geplant & montiert, TÜV-geprüft, 20-50+ Jahre Lebensdauer.
+A: Sehr stabil! Fachgerecht geplant & montiert, TÜV-geprüft, Statik berechnet, 20-50+ Jahre Lebensdauer, nach Normen konstruiert.
 
 F: Anbau- vs. Vorstellbalkon?
-A: ANBAU: In Geschossdecke, schnell, Neubau-ideal
-VORSTELL: Auf Stützen, für Sanierungen, flexibel
+A: ANBAU: In Geschossdecke verankert, schnell, teurer, Neubau-ideal, weniger Fundament nötig
+VORSTELL: Auf Stützen, für Sanierungen flexibler, günstiger, überall möglich
 
 F: Brauche ich einen Architekten?
-A: Große Projekte: Ja. Einfache Balkone: Nein. G&S berät gerne.
+A: Große Projekte/Mehrfamilienhäuser: Ja. Einfache Balkone: Nein. G&S berät gerne und erstellt Pläne.
 
 F: Wie lange dauert es gesamt?
 A: 2-6 Monate (Genehmigung 1-2 Monate, Fertigung 2-4 Wochen, Montage 1-2 Wochen).
 
 F: Kann ein Balkon abbrechen?
-A: Modern gebaut: Nein, sehr sicher. Alte Holzbalkone (80er/90er): Ja, oft morsch → Sanierung nötig!
+A: Modern gebaut (G&S Standard): Nein, sehr sicher, TÜV-geprüft. Alte Holzbalkone (80er/90er): Ja, oft morsch → Sanierung nötig!
 
 F: Ist Grillen auf dem Balkon erlaubt?
 A: Rechtlich kompliziert, unterschiedlich je Bundesland. Mit Nachbarn klären, Mietvertrag prüfen, Brandschutz beachten.
 
+F: Wie viel kostet die Montage?
+A: Inklusive in der Gesamtkalkulation. 2-3 Tage vor Ort mit Montagekran.
+
+F: Gibt es Förderungen?
+A: KFW-Förderung für energetische Sanierungen und barrierefrei-Umgestaltungen. Balkonkraftwerk-Förderung bundesweit 2025. Regionale Zusatzförderung (z.B. NRW).
+
 ==================================================
-REFERENZEN
+REFERENZEN & PROJEKTE
 ==================================================
 
-PROJEKTE (Auswahl):
-- Frankfurt: Moderne Anbaubalkone
-- Hamburg: 105+ Anbaubalkone am Neubau
-- Dortmund: Neue Wohnräume mit Vorstellbalkonen
-- Kronau: 3D-gedrucktes Mehrfamilienhaus mit Balkonen
-- Lünen: Erstes 3D-gedrucktes MFH mit Balkonen
-- Nürnberg: Balkonsanierung
+BOCHUM (Mehrere Projekte):
+- Anbaubalkone (Mai 2026)
+- Vorstellbalkone (April 2026 und Mai 2026)
+- Vorstellbalkone (2018)
+- Anbaubalkone (Mehrere Projekte 2018-2021)
+- Private Mehrfamilienhäuser mit modernen Aluminium-Balkonen
+
+WEITERE REFERENZEN IN DEUTSCHLAND:
+- Dortmund (Anbaubalkone, Mai 2026 - Neue Wohnräume mit Vorstellbalkonen)
+- Bielefeld (Vorstellbalkone, Mai 2026 und September 2025)
+- Frankfurt (Anbaubalkone, September 2025 - Moderne Anbaubalkone)
+- Münster (Vorstellbalkone, September 2025)
+- Neuwied (Anbaubalkone, April 2026 und November 2025)
+- Hamburg (Vorstellbalkone, August 2025 - 105+ Anbaubalkone am Neubau)
+- Grindelallee Hamburg (Balkonbau-Großprojekt)
+- Hemer (Vorstellbalkone, November 2025)
+- Nürnberg (Balkonsanierung, moderne Anbaubalkone in Hinterhof)
+- Duisburg (Hochwertige Vorstellbalkone & Anbaubalkone aus Aluminium)
+- Oberhausen (Anbaubalkone, November 2025)
+- Wilhelmshaven (Vorstellbalkone, November 2025)
+- Moers (Anbaubalkone, April 2026 und Vorstellbalkone, Mai 2026)
+- Kronau (Serielles Bauen - zwei Systemhäuser in Holzhybrid-Bauweise mit modernen Aluminium-Balkonen)
+- Lünen (Erstes 3D-gedrucktes Mehrfamilienhaus mit Balkonen)
+
+BESONDERE PROJEKTE:
+- Hamburg: 105+ Anbaubalkone am Neubau - Großprojekt
+- Lünen: 3D-gedrucktes Mehrfamilienhaus (erstes öffentlich gefördertes MFH im 3D-Betondruckverfahren)
+- Kronau: Serielles Bauen - Holzhybrid-Konstruktion
 - 80+ Balkone in Großprojekten möglich
+- Frankfurt: Moderne Anbaubalkone - Sanierungsprojekt
+- Nürnberg: Balkonsanierung mit modernen Glaselementen
 
 ==================================================
-MAGAZIN-THEMEN
+MAGAZIN & BLOG ARTIKEL
 ==================================================
 
-- Balkon nachrüsten – Ratgeber
-- Aluminiumbalkon – modern & langlebig
-- Balkonsanierung – Kosten & Möglichkeiten
-- Sichtschutz Ideen
-- 3D-gedruckte Mehrfamilienhäuser
-- Balkonkraftwerk Förderung 2025
-- Serielles Bauen
-- Balkon Trends 2025
-- Wird Balkonanbau gefördert?
-- Was kostet Balkonabriss?
-- Kann ein Balkon abbrechen?
-- Grillen auf dem Balkon erlaubt?
-- Best Pflanzen für Balkone
+AKTUELLE MAGAZINE:
+1. Der Aluminiumbalkon – modern, langlebig, wertsteigernd
+2. Balkonsanierung - Kosten und Möglichkeiten
+3. Balkon Sichtschutz Ideen & Möglichkeiten
+4. Balkone für das erste 3D-gedruckte Mehrfamilienhaus Deutschlands
+5. Balkonkraftwerk Förderung 2025 - Zuschüsse & Tipps
+6. Serielles Bauen in Kronau - Holzhybrid-Bauweise
+7. Balkon Trends 2025
+8. Wird ein Balkonanbau gefördert?
+9. Balkonkraftwerk - lohnt sich der Invest?
+10. Was kostet es, einen Balkon abzureißen?
+11. Balkon abreißen - Ist das erlaubt? Was ist zu beachten?
+12. Kann ein Balkon abbrechen?
+13. Ist das Grillen auf dem Balkon erlaubt?
+14. Die besten Pflanzen für den Balkon – Tipps vom Balkonprofi
+
+THEMENBEREICHE:
+- Balkonsysteme & Materialien
+- Sanierung & Modernisierung
+- Förderungen & Finanzierung
+- Rechtliches & Genehmigungen
+- Design & Trends
+- Nachaltigkeit & Umwelt
+- Gartengestaltung auf Balkonen
 
 ==================================================
-FÖRDERUNGEN
+ZIELGRUPPEN & LÖSUNGEN
 ==================================================
 
-KFW-FÖRDERUNG:
-- Energetische Sanierungen
-- Barrierefrei-Umgestaltung
-- Zuschüsse & zinslose Darlehen
+FÜR WOHNUNGSUNTERNEHMEN:
+- Großprojekte mit 20-105+ Balkonen
+- Sanierungen & Neubau
+- Mietersteigerung um 50-100€/Monat
+- Wertsteigerung +5-10%
+- Zufriedenere Mieter
+- Full-Service aus einer Hand
 
-BALKONKRAFTWERK-FÖRDERUNG:
-- Bundesweit 2025
-- Regionale Zusatzförderung (z.B. NRW)
-- Kommunale Programme
-- Anschaffungskosten-Reduktion
+FÜR GENOSSENSCHAFTEN:
+- 25+ Jahre Partnerschaft mit Wohnungsbaugenossenschaften
+- Zuverlässigkeit & Treue
+- Kompetente, persönliche Betreuung
+- Ein Ansprechpartner von Ausschreibung bis Montage
+- Kosteneffiziente Lösungen
+- Großprojekte realisierbar
+
+FÜR ARCHITEKTEN:
+- Hochwertige Systemlösungen
+- Flexible Gestaltungsmöglichkeiten
+- Moderne & zeitlose Designs
+- Alle RAL-Farben möglich
+- Projektberichte & Referenzen verfügbar
+- Datenblätter & Detailzeichnungen
+
+FÜR PRIVATE IMMOBILIENBESITZER:
+- Kleine bis mittlere Projekte
+- Balkonsanierung
+- Balkon nachrüsten
+- Individuelle Lösungen
+- Kostenlose Beratung
+- Finanzierungsoptionen
+
+FÜR GEWERBLICHE KUNDEN:
+- Gewerbeimmobilien
+- Produktionsstätten
+- Lagerhallen mit Büros
+- Maßgeschneiderte Lösungen
 
 ==================================================
-KONTAKT
+DOWNLOADS & RESSOURCEN
 ==================================================
 
-Telefon: 02382 98973-0
-E-Mail: info@diebalkonbauer.de
-Adresse: Kruppstraße 34, 59227 Ahlen
-Website: www.diebalkonbauer.de
-Balkonrechner: www.diebalkonbauer.de/balkonrechner
+KOSTENLOS VERFÜGBAR:
+- Datenblatt Anbaubalkon
+- Datenblatt Vorstellbalkon
+- Datenblatt Nischenbalkon
+- Datenblatt freitragender Balkon
+- Datenblatt Balkonzubehör
+- Imagebroschüre
+- Unternehmenspräsentation
+- Projektberichte
+- Planungsunterlagen
 
-Downloads: Datenblätter, Broschüren, Präsentationen
-Service: Showroom, Newsletter, Beratung, Downloads`;
+ONLINE-TOOLS:
+- Balkonrechner (online Konfiguration)
+- 3D-Konstruktion
+- Kostenlose Beratung vereinbaren
+- Unverbindliches Angebot anfragen
+
+==================================================
+KONTAKT & SERVICE
+==================================================
+
+TELEFON: 02382 98973-0
+E-MAIL: info@diebalkonbauer.de
+WEBSITE: www.diebalkonbauer.de
+BALKONRECHNER: www.diebalkonbauer.de/balkonrechner
+
+ÖFFNUNGSZEITEN:
+Montag - Freitag: 8:00 - 17:00 Uhr
+Beratung nach Vereinbarung
+
+ADRESSE:
+G&S die balkonbauer GmbH & Co. KG
+Kruppstraße 34
+59227 Ahlen
+Deutschland
+
+LEISTUNGEN:
+- Showroom in Ahlen
+- Newsletter abonnieren
+- Persönliche Beratung vor Ort
+- Kostenlose 3D-Planung
+- Deutschlandweit Montage
+- Garantie auf Materialien
+- Kunden-Support
+
+BESONDERHEITEN:
+- Eigener Montagekran
+- Eigenes Werk
+- Hauseigene Statik
+- Deutschlandweit tätig
+- TÜV-Prüfung inklusive
+- Vollständig aus einer Hand
+- Termintreue garantiert
+
+==================================================
+AUSZEICHNUNGEN & ZERTIFIZIERUNGEN
+==================================================
+
+- ISO 9001 zertifiziert seit 1998
+- EN 1090 zertifiziert (Stahlkonstruktion)
+- TÜV-Zertifizierung
+- Fachgerechte Montage zertifiziert
+- Deutsche Facharbeit
+- Qualitätsmanagement nach internationalen Standards
+- Nachhaltige Fertigung`;
 
 const server = http.createServer(async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -224,7 +412,7 @@ const server = http.createServer(async (req, res) => {
           body: JSON.stringify({
             model: 'claude-opus-4-6',
             max_tokens: 500,
-            system: `Du bist ein hilfreicher und freundlicher Chatbot für G&S die balkonbauer GmbH. Du antwortest professionell und hilfreich. Nutze AUSSCHLIESSLICH diese Informationen:\n\n${kb}\n\nWenn etwas nicht beantwortet werden kann: Kontaktiere das Unternehmen!\nTelefon: 02382 98973-0\nE-Mail: info@diebalkonbauer.de\nBalkonrechner: www.diebalkonbauer.de/balkonrechner`,
+            system: `Du bist ein Kundenservice-Chatbot für G&S die balkonbauer GmbH. Antworte natürlich und direkt - kein Marketing-Sprech, keine Emojis, kein fett-Text. Kurze, prägnante Sätze. Nutze AUSSCHLIESSLICH diese Informationen:\n\n${kb}\n\nWenn du etwas nicht weißt: Sag es ehrlich und gib den Kontakt zum Team - Telefon: 02382 98973-0, E-Mail: info@diebalkonbauer.de, Website: www.diebalkonbauer.de. Schreib in Fließtext, nur essenzielle Informationen.`,
             messages: [{role: 'user', content: message}]
           })
         });
