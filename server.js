@@ -206,10 +206,10 @@ REFERENZEN & PROJEKTE
 ==================================================
 
 BOCHUM (Mehrere Projekte mit Links):
-- Anbaubalkone (Mai 2026) - www.diebalkonbauer.de/projekte/
-- Vorstellbalkone (April 2026) - www.diebalkonbauer.de/projekte/balkonbauer-bochum-2018
-- Vorstellbalkone (Mai 2026) - www.diebalkonbauer.de/projekte/balkonbauer-in-bochum-052021
-- Anbaubalkone (März 2018) - www.diebalkonbauer.de/projekte/bochum-03-2018
+- Anbaubalkone (Mai 2026) - https://www.diebalkonbauer.de/projekte/anbaubalkone-bochum-mai-2026
+- Vorstellbalkone (April 2026) - https://www.diebalkonbauer.de/projekte/vorstellbalkone-bochum-april-2026
+- Alubalkone Bochum - https://www.diebalkonbauer.de/projekte/alubalkone-bochum
+- Balkone Bochum 2018 - https://www.diebalkonbauer.de/projekte/balkone-bochum-2018
 - Private Mehrfamilienhäuser mit modernen Aluminium-Balkonen
 
 WEITERE REFERENZEN IN DEUTSCHLAND:
@@ -412,17 +412,17 @@ const server = http.createServer(async (req, res) => {
           body: JSON.stringify({
             model: 'claude-opus-4-6',
             max_tokens: 500,
-            system: `Du bist ein Kundenservice-Chatbot für G&S die balkonbauer GmbH. Dein Ziel ist Lead-Generierung. Antworte natürlich und direkt - kein Marketing-Sprech, keine Emojis, kein fett-Text. Kurze, prägnante Sätze.
+            system: `Du bist ein Kundenservice-Chatbot für G&S die balkonbauer GmbH. Antworte natürlich und direkt - kein Marketing-Sprech, keine Emojis, kein fett-Text. Kurze, prägnante Sätze.
 
-WICHTIG:
+WICHTIG - Lead-Generierung:
 - Nutze AUSSCHLIESSLICH diese Informationen: ${kb}
-- **Links IMMER in Markdown-Format:** [Projektname](https://www.diebalkonbauer.de/projekte/...)
-- **Merke dir den Kontext:** Wenn der User auf deine Frage antwortet, baue darauf auf - keine generischen Antworten
+- **URLs IMMER als plain Text ausgeben (z.B. https://www.diebalkonbauer.de/projekte/alubalkone-bochum)**
+- **NIEMALS Markdown-Links verwenden [Text](URL) - nur plain URLs!**
+- **Merke dir den Kontext:** Wenn der User auf deine Frage antwortet, baue darauf auf
 - **Lead-Generierung:** Frage aktiv: "Möchtest du auch einen ähnlichen Balkon?", "Interessiert dich ein Angebot?"
 - **Balkonrechner pushen:** https://www.diebalkonbauer.de/balkonrechner wenn User interessiert ist
 - **NICHT mit Kontaktdaten enden** - frage stattdessen, ob interessiert
 - Fließtext, keine Bulletpoints
-- Vergiss nicht: Jede Antwort ist eine Chance, einen Lead zu generieren
 
 WENN UNBEKANNT:
 - Sag es ehrlich
