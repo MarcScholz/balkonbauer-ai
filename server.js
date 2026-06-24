@@ -205,11 +205,11 @@ A: KFW-Förderung für energetische Sanierungen und barrierefrei-Umgestaltungen.
 REFERENZEN & PROJEKTE
 ==================================================
 
-BOCHUM (Mehrere Projekte):
-- Anbaubalkone (Mai 2026)
-- Vorstellbalkone (April 2026 und Mai 2026)
-- Vorstellbalkone (2018)
-- Anbaubalkone (Mehrere Projekte 2018-2021)
+BOCHUM (Mehrere Projekte mit Links):
+- Anbaubalkone (Mai 2026) - www.diebalkonbauer.de/projekte/
+- Vorstellbalkone (April 2026) - www.diebalkonbauer.de/projekte/balkonbauer-bochum-2018
+- Vorstellbalkone (Mai 2026) - www.diebalkonbauer.de/projekte/balkonbauer-in-bochum-052021
+- Anbaubalkone (März 2018) - www.diebalkonbauer.de/projekte/bochum-03-2018
 - Private Mehrfamilienhäuser mit modernen Aluminium-Balkonen
 
 WEITERE REFERENZEN IN DEUTSCHLAND:
@@ -412,7 +412,26 @@ const server = http.createServer(async (req, res) => {
           body: JSON.stringify({
             model: 'claude-opus-4-6',
             max_tokens: 500,
-            system: `Du bist ein Kundenservice-Chatbot für G&S die balkonbauer GmbH. Antworte natürlich und direkt - kein Marketing-Sprech, keine Emojis, kein fett-Text. Kurze, prägnante Sätze. Nutze AUSSCHLIESSLICH diese Informationen:\n\n${kb}\n\nWenn du etwas nicht weißt: Sag es ehrlich und gib den Kontakt zum Team - Telefon: 02382 98973-0, E-Mail: info@diebalkonbauer.de, Website: www.diebalkonbauer.de. Schreib in Fließtext, nur essenzielle Informationen.`,
+            system: `Du bist ein Kundenservice-Chatbot für G&S die balkonbauer GmbH. Dein Ziel ist Lead-Generierung. Antworte natürlich und direkt - kein Marketing-Sprech, keine Emojis, kein fett-Text. Kurze, prägnante Sätze.
+
+WICHTIG - Lead-Generierung:
+- Nutze AUSSCHLIESSLICH diese Informationen: ${kb}
+- Wenn jemand nach Projekten/Referenzen fragt: Gib konkrete Links zu Projektseiten an (z.B. www.diebalkonbauer.de/projekte/balkonbauer-in-bochum-052021)
+- Beende Antworten NICHT mit "Kontaktiere uns" - stattdessen: Frage aktiv, ob die Person interessiert ist
+- Fragen wie: "Möchtest du auch einen ähnlichen Balkon für deine Immobilie?", "Interessiert dich ein Angebot?", "Sollen wir deine Situation durchgehen?"
+- Wenn jemand interessiert ist → Leite auf den Balkonrechner (Balkonkonfigurator) weiter: https://www.diebalkonbauer.de/balkonrechner
+- Der Balkonrechner ist dein Haupt-Tool für Leads - dort können Nutzer unverbindlich kalkulieren
+- Vergiss nicht: Jede Frage ist eine Chance, einen Lead zu generieren
+
+WENN ETWAS NICHT IN DER KB STEHT:
+- Sag es ehrlich
+- Gib dann direkt Kontakt: Telefon 02382 98973-0, Email info@diebalkonbauer.de, www.diebalkonbauer.de
+
+STIL:
+- Fließtext, keine Bulletpoints
+- Kurz und prägnant
+- Keine Höflichkeitsfloskeln
+- Direkt und hilfreich`,
             messages: [{role: 'user', content: message}]
           })
         });
